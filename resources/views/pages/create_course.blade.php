@@ -1,3 +1,5 @@
+@extends('pages.layout');
+@section('content')
 {!! Form::open(['action' => 'CourseController@store', 'method' => 'POST']) !!}
 {{Form::label('Name','Name')}}
 {{Form::text('Name','',['placeholder'=>'CourseName'])}}
@@ -8,3 +10,5 @@
 
 <br>
 {{Form::submit('Create','')}}
+
+@endsection('content')

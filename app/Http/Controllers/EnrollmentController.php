@@ -1,11 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Student;
 use Illuminate\Http\Request;
 
 class EnrollmentController extends Controller
 {
+    public  function view(){
+
+    }
     /**
      * Display a listing of the resource.
      *

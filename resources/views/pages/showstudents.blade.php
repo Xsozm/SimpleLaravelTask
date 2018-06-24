@@ -1,3 +1,5 @@
+@extends('pages.layout');
+@section('content')
 <h1>Students</h1>
 <a href="/students/create"> Add New Student</a>
 @if(count($students)>0)
@@ -11,3 +13,5 @@
     @else
     <p>No Students Found ! </p>
 @endif
+
+@endsection('content')

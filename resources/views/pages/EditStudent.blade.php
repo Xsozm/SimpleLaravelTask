@@ -1,4 +1,5 @@
-
+@extends('pages.layout');
+@section('content')
 <h1>Update Or Delete Student {{$id}} </h1>
 
 {!! Form::open(['action' => ['StudentController@update',$id], 'method' => 'PUT']) !!}
@@ -23,3 +24,4 @@
 {{Form::submit('Delete','')}}
 
 {!! Form::close() !!}
+@endsection('content')

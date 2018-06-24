@@ -1,4 +1,5 @@
-
+@extends('pages.layout');
+@section('content')
 <h1>Create Student </h1>
 
 {!! Form::open(['action' => 'StudentController@store', 'method' => 'POST']) !!}
@@ -15,3 +16,5 @@
 {{Form::submit('Create','')}}
 
 {!! Form::close() !!}
+
+@endsection('content')
